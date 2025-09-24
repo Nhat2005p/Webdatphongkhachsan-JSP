@@ -1,0 +1,40 @@
+@"
+# --- Build artifacts ---
+target/
+build/
+.gradle/
+# Giữ wrapper để người khác build được
+!.mvn/wrapper/maven-wrapper.jar
+
+# --- IDEs ---
+# IntelliJ
+.idea/
+*.iml
+out/
+# Eclipse
+.project
+.classpath
+.settings/
+# NetBeans
+nbproject/private/
+dist/
+nbbuild/
+.nb-gradle/
+# VS Code
+.vscode/
+
+# --- Servers / workspace ---
+Servers/
+.metadata/
+
+# --- Packages (không commit artifacts phát hành) ---
+*.jar
+*.war
+*.ear
+*.log
+
+# --- OS / secrets ---
+.DS_Store
+Thumbs.db
+*.env
+"@ | Out-File -Encoding UTF8 .gitignore
